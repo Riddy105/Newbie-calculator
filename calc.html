@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html {
+        font-size: 12px;
+      }
+      body {
+        background-color: green;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      main {
+        max-width: fit-content;
+        height: fit-content;
+        padding: 1rem;
+
+        background-color: blue;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        font-size: 2rem;
+      }
+      .display {
+        background-color: burlywood;
+        height: 5rem;
+        grid-column: 1/-1;
+      }
+      .firstRow {
+        background-color: bisque;
+        height: 5rem;
+        width: 5rem;
+      }
+      .symbol {
+        background-color: greenyellow;
+        height: 5rem;
+        width: 5rem;
+      }
+      .pink {
+        background-color: pink;
+        height: 5rem;
+        width: 5rem;
+      }
+      .align {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="display align"></div>
+      <p class="firstRow align">1</p>
+      <p class="firstRow align">2</p>
+      <p class="firstRow align">3</p>
+      <p class="symbol align">+</p>
+      <p class="firstRow align">4</p>
+      <p class="firstRow align">5</p>
+      <p class="firstRow align">6</p>
+      <p class="symbol align">-</p>
+      <p class="firstRow align">7</p>
+      <p class="firstRow align">8</p>
+      <p class="firstRow align">9</p>
+      <p class="symbol align">*</p>
+      <p class="pink align">C</p>
+      <p class="firstRow align">0</p>
+      <p class="firstRow align">=</p>
+      <p class="symbol align">/</p>
+    </main>
+  </body>
+</html>
