@@ -26,13 +26,11 @@
         max-width: fit-content;
         height: fit-content;
         padding: 1rem;
-
         background-color: blue;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         row-gap: 0.5rem;
         column-gap: 0.5rem;
-        font-size: 2rem;
       }
       .display {
         background-color: burlywood;
@@ -58,28 +56,41 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 2rem;
+        color: #333;
+        border: none;
+      }
+      button:hover,
+      button:active {
+        background-color: #ffd8a8;
+        cursor: pointer;
+        transition: all 0.5s;
+      }
+      .symbol:hover,
+      .symbol:active {
+        background-color: #66a80f;
       }
     </style>
   </head>
   <body>
     <main>
       <div class="display align"></div>
-      <p class="firstRow align">1</p>
-      <p class="firstRow align">2</p>
-      <p class="firstRow align">3</p>
-      <p class="symbol align">+</p>
-      <p class="firstRow align">4</p>
-      <p class="firstRow align">5</p>
-      <p class="firstRow align">6</p>
-      <p class="symbol align">-</p>
-      <p class="firstRow align">7</p>
-      <p class="firstRow align">8</p>
-      <p class="firstRow align">9</p>
-      <p class="symbol align">*</p>
-      <p class="pink align">C</p>
-      <p class="firstRow align">0</p>
-      <p class="firstRow align">=</p>
-      <p class="symbol align">/</p>
+      <button class="firstRow align">1</button>
+      <button class="firstRow align">2</button>
+      <button class="firstRow align">3</button>
+      <button class="symbol align">+</button>
+      <button class="firstRow align">4</button>
+      <button class="firstRow align">5</button>
+      <button class="firstRow align">6</button>
+      <button class="symbol align">-</button>
+      <button class="firstRow align">7</button>
+      <button class="firstRow align">8</button>
+      <button class="firstRow align">9</button>
+      <button class="symbol align">*</button>
+      <button class="pink align">C</button>
+      <button class="firstRow align">0</button>
+      <button class="firstRow align">=</button>
+      <button class="symbol align">/</button>
     </main>
   </body>
 </html>
